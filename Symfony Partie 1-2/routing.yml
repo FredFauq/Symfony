@@ -1,0 +1,13 @@
+e2_ncandidate_homepage:
+    path:     /
+    defaults: { _controller: E2NcandidateBundle:Default:index }
+    
+e2_ncandiddate_add_user:
+    path:    /ajout-utilisateur
+    defaults: { _controller: E2NcandidateBundle:addUser:addUser }
+    
+ 
+
+add_candidat:
+    path:     /ajout-candidat
+    defaults: { _controller: E2NcandidateBundle:addCandidat:addCandidat }

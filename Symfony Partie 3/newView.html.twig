@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+        <title>title</title>
+    </head>
+    <body>
+        <div class="container bg-secondary">
+            <div>
+                <nav>
+                    <ul>
+                        <a href="view"><li>Inscription</li></a>
+                        <a href="show"><li>Liste des candidats</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="justify-content-center">
+                <h3 class="text-center">Formulaire</h3>
+                <div class="text-center col-md-6 offset-md-3">
+                    {{ form_start(formView) }}
+                    {{ form_errors(formView) }}
+                    <div class="form-group">
+                        {{ form_label(formView.lastname) }}
+                        {{ form_errors(formView.lastname) }}
+                        {{ form_widget(formView.lastname, { 'attr': { 'class': 'col-md-5 col-lg-5'} })  }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(formView.firstname) }}
+                        {{ form_errors(formView.firstname) }}
+                        {{ form_widget(formView.firstname) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(formView.mail) }}
+                        {{ form_errors(formView.mail) }}
+                        {{ form_widget(formView.mail) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(formView.motivation) }}
+                        {{ form_errors(formView.motivation) }}
+                        {{ form_widget(formView.motivation) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(formView.palme) }}
+                        {{ form_errors(formView.palme) }}
+                        {{ form_widget(formView.palme) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(formView.submit) }}
+                        {{ form_widget(formView.submit) }}
+                    </div>
+                    <div>
+                        {{ form_rest(formView) }}
+                        {{ form_end(formView) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </body>
+</html>
