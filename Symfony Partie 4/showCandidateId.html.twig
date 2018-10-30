@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <title>Liste d'un candidat</title>
+    </head>
+    <body>
+        <div class="container mt-3">
+            <table class="table table-success">
+                <tr>
+                    <th scope="row">Nom</th>
+                    <td>{{ user.lastname }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Prénom</th>
+                    <td>{{ user.fistname }}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Mail</th>
+                    <td>{{ user.mail }}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Motivation</th>
+                    <td>{{ user.motivation }}</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Palme</th>
+                    <td>{{ user.palme }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Date de création</th>
+                    <td>{{ user.createDate|date('d/m/Y') }}</td>
+                </tr>
+            </table> 
+            <a href="http://candidat/app_dev.php/listecandidats" class="btn btn-primary" role="button" aria-pressed="true">Retour</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+e2_ncandidate_homepage:
+    path:     /
+    defaults: { _controller: E2NcandidateBundle:Default:index }
+    
+add_candidate:
+    path:     /ajoutcandidat
+    defaults: { _controller: E2NcandidateBundle:addCandidate:addCandidate }
+    
+show_candidate:
+    path:     /listecandidats
+    defaults: { _controller: E2NcandidateBundle:showCandidate:showCandidate }
+    
+show_candidate_Id:
+    path:     /liste1candidat/{id}
+    defaults: { _controller: E2NcandidateBundle:showCandidateId:showCandidateId }
+
